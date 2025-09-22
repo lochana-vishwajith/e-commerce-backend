@@ -1,16 +1,13 @@
-package com.userservice.user.Models;
+package com.userservice.user.DTO;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-@Entity
-@Table(name="users")
-public class User {
-
-    @Id
+@AllArgsConstructor
+@NoArgsConstructor
+public class UserDTO {
     private int id;
 
     private String firstName;
